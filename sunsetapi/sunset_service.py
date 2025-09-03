@@ -1,6 +1,6 @@
 import requests
 
-def get_sunset_data(coords):
+def get_sunData(coords):
     # coords{lat, lon} from Backend
     url = f"sunrise_sunset_api"
     response = requests.get(url)

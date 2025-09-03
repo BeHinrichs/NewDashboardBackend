@@ -1,14 +1,12 @@
 from rest_framework.serializers import ModelSerializer
-from .models import Sunset
+from .models import SunData
 
 
-class SunsetAPISerializer(ModelSerializer):
+class SunDataAPISerializer(ModelSerializer):
     class Meta:
-        model = Sunset
+        model = SunData
         fields = [
-            "id",
             "date",
             "sunrise",
             "sunset",
-            "location",
         ]
